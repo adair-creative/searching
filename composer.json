@@ -1,0 +1,11 @@
+{
+	"name": "adair-creative/searching",
+	"description": "A tool for easy and advanced search and analytical functionality",
+	"version": "1.0",
+	"authors": [
+		{
+			"name": "Jesse Solomon",
+			"email": "jesse@adaircreative.com"
+		}
+	]
+}
