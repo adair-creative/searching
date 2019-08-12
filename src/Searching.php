@@ -47,7 +47,7 @@ namespace AdairCreative {
 
 			$index = 0;
 			foreach ($models as $model) {
-				if ($res = $model::get()->filter((is_array($fieldName) ? (count($fieldName) > $index ? $fieldName[$index] : $fieldName[0]) : $fieldName) . ":PartialMatch", $recordQuery)->toArray()) $return->merge($res);
+				if ($res = $model::get()->filterAny((is_array($fieldName) ? (count($fieldName) > $index ? $fieldName[$index] : $fieldName[0]) : $fieldName) . ":PartialMatch", $recordQuery)->toArray()) $return->merge($res);
 				
 				$index++;
 			}
